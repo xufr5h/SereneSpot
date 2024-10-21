@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popularity</title>
+    <link rel="stylesheet" href="popularity.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <!-- logo-section -->
+      <div class="logo-section">
+        <img src="/Images/logo.png" width="70" height="70" />
+        <h1 class="webiste-name">SereneSpot</h1>
+      </div>
+      <!-- search section -->
+      <div class="search">
+        <form action="#">
+          <input type="text" placeholder="Search" name="seacrh" />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <br />
+
+    <!-- bottoma area -->
+    <div class="bottom-area">
+      <div class="nav-container">
+        <nav>
+          <ul class="functions">
+            <li>
+              <a href="/homePage/index.html" onclick="location.reload();">
+                <span><img src="/Images/home.png" /></span>Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="active"
+                onclick="location.reload();"
+              >
+                <span><img src="/Images/popularity.png" /></span> Popularity</a
+              >
+            </li>
+            <li>
+              <a href="#notification">
+                <span><img src="/Images/notification.png" /></span>
+                Notification</a
+              >
+            </li>
+
+            <div class="divider"></div>
+
+            <li class="section-title">Resources</li>
+            <li class="sub-menu">
+              <a href="/latestResources/latestResearches.html"
+                ><span><img src="/Images/latestResources.png" /></span>Latest
+                Resources</a
+              >
+            </li>
+            <li class="sub-menu">
+              <a href="#copingStrategies"
+                ><span><img src="/Images/copingStrategies.png" alt="" /></span
+                >Coping Strategies</a
+              >
+            </li>
+            <li class="sub-menu">
+              <a href="#positivePsychology"
+                ><span><img src="/Images/positivePsychology.png" /></span
+                >Positive Psychology</a
+              >
+            </li>
+
+            <div class="divider"></div>
+
+            <li>
+              <a href="#privacyPolicy"
+                ><span><img src="/Images/privacyPolicy.png" /></span>Privacy
+                Policy</a
+              >
+            </li>
+            <li>
+              <a href="#termsAndConditions"
+                ><span><img src="/Images/termsAndConditions.png" /></span>Terms
+                and Conditions</a
+              >
+            </li>
+            <li>
+              <a href="#aboutUs"
+                ><span><img src="/Images/AboutUs.png" /></span>About Us</a
+              >
+            </li>
+
+            <div class="divider"></div>
+
+            <li>
+              <a href="#logIn"
+                ><span><img src="/Images/logIn.png" /></span>Log In</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- main-content area -->
+      <div class="main-content">
+        <h2 class="topic">Popular Blogs</h2>
+        <div class="blogs-container">
+          <div class="popular-blogs">
+            <!-- blog 1 -->
+            <div class="card">
+              <div class="user-info">
+                <img
+                  src="https://i.pinimg.com/736x/c4/52/34/c45234bc8615ef3505c0f831d93be80d.jpg"
+                  class="avatar"
+                  alt="hutao"
+                />
+                <div class="user-handle">Who Tao</div>
+              </div>
+              <div class="card-body">
+                <h2 class="article-topic">
+                  The Importance of Boundaries for Mental Wellness
+                </h2>
+                <div class="content">
+                  <img
+                    src="https://i.pinimg.com/564x/b4/1e/21/b41e211975b654d0285a8af35a05db0f.jpg"
+                    alt="NO"
+                    class="article-image"
+                  />
+                  <p class="description">
+                    Establishing boundaries is essential for mental wellness as
+                    it protects our emotional and physical space, reduces
+                    stress, and fosters healthier relationships. By clearly
+                    defining what is
+                  </p>
+                </div>
+                <div class="footer">
+                  <span class="date">March 21, 2022</span>
+                  <a href="#" class="read-more">Read more....</a>
+                </div>
+              </div>
+            </div>
+            <!-- blog 2 -->
+            <div class="card">
+              <div class="user-info">
+                <img
+                  src="https://i.pinimg.com/736x/dd/6b/d3/dd6bd3efbabd5e81fdf09d1d7c1df2ad.jpg"
+                  class="avatar"
+                  alt="hutao"
+                />
+                <div class="user-handle">Alatus</div>
+              </div>
+              <div class="card-body">
+                <h2 class="article-topic">
+                  The Power of Self-Care: Prioritizing Your Mental Well-being
+                </h2>
+                <div class="content">
+                  <img
+                    src="https://i.pinimg.com/control/564x/2c/9e/0f/2c9e0f530b9608f0ba8a2b57cf1e0ea2.jpg"
+                    alt="self care"
+                    class="article-image"
+                  />
+                  <p class="description">
+                    In our fast-paced world, it's easy to get caught up in the
+                    hustle and forget to take care of our mental health.
+                    Self-care isn't selfish; it's essential. Small, daily
+                    practices like taking a few moments for mindfulness, getting
+                    enough sleep
+                  </p>
+                </div>
+                <div class="footer">
+                  <span class="date">March 21, 2022</span>
+                  <a href="#" class="read-more">Read more....</a>
+                </div>
+              </div>
+            </div>
+            <!-- blog 3 -->
+            <div class="card">
+              <div class="user-info">
+                <img
+                  src="https://i.pinimg.com/736x/8b/77/7a/8b777a2f624ce4faf2bf5b84ac5bed61.jpg"
+                  class="avatar"
+                  alt="hutao"
+                />
+                <div class="user-handle">MalipoKinich</div>
+              </div>
+              <div class="card-body">
+                <h2 class="article-topic">
+                  Breaking the Stigma: Why Mental Health Matters
+                </h2>
+                <div class="content">
+                  <img
+                    src="https://i.pinimg.com/564x/08/e0/a9/08e0a9edc324c0354bba6afd2c42481d.jpg"
+                    alt="Stigma"
+                    class="article-image"
+                  />
+                  <p class="description">
+                    Establishing boundaries is essential for mental wellness as
+                    it protects our emotional and physical space, reduces
+                    stress, and fosters healthier relationships. By clearly
+                    defining what is
+                  </p>
+                </div>
+                <div class="footer">
+                  <span class="date">March 21, 2022</span>
+                  <a href="#" class="read-more">Read more....</a>
+                </div>
+              </div>
+            </div>
+            <!-- blog 4 -->
+            <div class="card">
+              <div class="user-info">
+                <img
+                  src="https://i.pinimg.com/736x/3a/64/0d/3a640d13257a168e56c2253e59e24ea7.jpg"
+                  class="avatar"
+                  alt="hutao"
+                />
+                <div class="user-handle">Kuhul Ajaw</div>
+              </div>
+              <div class="card-body">
+                <h2 class="article-topic">
+                  Coping Strategies for Stress: Practical Tips You Can Use
+                </h2>
+                <div class="content">
+                  <img
+                    src="https://i.pinimg.com/control/564x/4b/09/df/4b09dfab8c969a055d4c2aebd7923f37.jpg"
+                    alt="stress"
+                    class="article-image"
+                  />
+                  <p class="description">
+                    Establishing boundaries is essential for mental wellness as
+                    it protects our emotional and physical space, reduces
+                    stress, and fosters healthier relationships. By clearly
+                    defining what is
+                  </p>
+                </div>
+                <div class="footer">
+                  <span class="date">March 21, 2022</span>
+                  <a href="#" class="read-more">Read more....</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- popular discussions -->
+        <h2 class="topic">Popular Discussions</h2>
+        <div class="discussion-card">
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/control/564x/12/b2/4c/12b24c56ccf5cccf67d98ef74f0dbe0e.jpg"
+              alt="unohana"
+              class="discussion-avatar"
+            />
+            <div class="user-handle">@girlBoss</div>
+          </div>
+          <h2 class="discssion-title">
+            What does mental health wellness mean to you guys?
+          </h2>
+          <p class="discussion-description">
+            Mental wellness, for me, is about feeling emotionally balanced and
+            having a sense of control over my thoughts and reactions. I know I'm
+            in a good place mentally when I can handle stress without feeling
+            overwhelmed and I find joy in everyday activities. I used to think
+            mental health was just about not feeling anxious or sad, but now I
+            realise it's also about growth, learning to cope with emotions and
+            being kind.
+          </p>
+          <div class="action-bar">
+            <button class="likes"><span class="icon">❤️</span>2.3K</button>
+            <button class="comments" id="commentBtn">
+              <span class="icon">💬</span>345
+            </button>
+          </div>
+          <!-- comment section -->
+          <div class="comment-section">
+            <h3>Leave a comment</h3>
+            <div class="comments-container"></div>
+            <form class="comment-form">
+              <textarea
+                name="comment"
+                class="comment-input"
+                rows="4"
+                placeholder="Post your comment here..."
+              ></textarea>
+              <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+        <br />
+        <!-- discussion 2 -->
+        <div class="discussion-card">
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/control/564x/5d/ab/a8/5daba8fcc49a77618386606c5de2ad45.jpg"
+              alt="unohana"
+              class="discussion-avatar"
+            />
+            <div class="user-handle">@Alatus</div>
+          </div>
+          <h2 class="discssion-title">
+            Embracing Imperfection: The Path to Self-Compassion
+          </h2>
+          <p class="discussion-description">
+            In a world that often values perfectionism, it's easy to be your own
+            harshest critic. However, constantly striving for perfection can
+            lead to anxiety, burnout, and feelings of inadequacy.
+            Self-compassion is the antidote to these pressures. It involves
+            recognizing that being imperfect is part of the human experience.
+          </p>
+          <div class="action-bar">
+            <button class="likes"><span class="icon">❤️</span>2.3K</button>
+            <button class="comments" id="commentBtn">
+              <span class="icon">💬</span>345
+            </button>
+          </div>
+          <!-- comment section -->
+          <div class="comment-section">
+            <h3>Leave a comment</h3>
+            <div class="comments-container"></div>
+            <form class="comment-form">
+              <textarea
+                name="comment"
+                class="comment-input"
+                rows="4"
+                placeholder="Post your comment here..."
+              ></textarea>
+              <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+        <br />
+        <!-- discussion 3 -->
+        <div class="discussion-card">
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/736x/aa/79/6d/aa796d8affa63909caacbb2675fb111f.jpg"
+              alt="unohana"
+              class="discussion-avatar"
+            />
+            <div class="user-handle">@Focalors</div>
+          </div>
+          <h2 class="discssion-title">Finding Balance in a Busy World</h2>
+          <p class="discussion-description">
+            Your mental health matters—take time to nurture it, just like you
+            would any other part of your well-being. 💙
+          </p>
+          <img
+            src="https://i.pinimg.com/564x/75/ca/8c/75ca8c6ba7229625b1d54d75b3fbca55.jpg"
+            class="arle-img"
+          />
+          <div class="action-bar">
+            <button class="likes"><span class="icon">❤️</span>2.3K</button>
+            <button class="comments" id="commentBtn">
+              <span class="icon">💬</span>345
+            </button>
+          </div>
+          <!-- comment section -->
+          <div class="comment-section">
+            <h3>Leave a comment</h3>
+            <div class="comments-container"></div>
+            <form class="comment-form">
+              <textarea
+                name="comment"
+                class="comment-input"
+                rows="4"
+                placeholder="Post your comment here..."
+              ></textarea>
+              <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+        <!-- poular-users -->
+        <div class="popular-users">
+          <h3>Popular Users</h3>
+          <!-- user1 -->
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/736x/c4/52/34/c45234bc8615ef3505c0f831d93be80d.jpg"
+              class="avatar"
+              alt="hutao"
+            />
+            <div class="user-handle">@alreNation</div>
+          </div>
+          <!-- user 2 -->
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/736x/5d/b1/2d/5db12d1989c62cc1e63e16b2ff7dc2ca.jpg"
+              class="avatar"
+              alt="hutao"
+            />
+            <div class="user-handle">@Geogiant</div>
+          </div>
+          <!-- user 3 -->
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/736x/d8/99/e6/d899e6e9818dc369834a3570441989cd.jpg"
+              class="avatar"
+              alt="hutao"
+            />
+            <div class="user-handle">@visionSeeker</div>
+          </div>
+          <!-- user 4 -->
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/736x/c7/b4/64/c7b46496e94301584aaba877a4507485.jpg"
+              class="avatar"
+              alt="hutao"
+            />
+            <div class="user-handle">@ayaya</div>
+          </div>
+          <!-- user 5 -->
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/736x/c0/ba/1c/c0ba1c717acc96bc9a187b59b97f334c.jpg"
+              class="avatar"
+              alt="hutao"
+            />
+            <div class="user-handle">@adeptusXiao</div>
+          </div>
+          <!-- user 6 -->
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/564x/e2/d9/b9/e2d9b90b924d840caf10438a6899a74c.jpg"
+              class="avatar"
+              alt="hutao"
+            />
+            <div class="user-handle">@bennyboy</div>
+          </div>
+        </div>
+        <!-- popular tags -->
+        <div class="popular-tags">
+          <h3>Popular Tags</h3>
+          <a class="tags" href="#anxiety">#anxiety</a>
+          <a class="tags" href="#anxiety">#depression</a>
+          <a class="tags" href="#anxiety">#ptsd</a>
+          <a class="tags" href="#anxiety">#strategies</a>
+          <a class="tags" href="#anxiety">#health</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+      // scroll behavior for popular blogs
+      document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector(".blogs-container");
+        const scrollContainer = document.querySelector(".popular-blogs");
+        let isMouseDown = false;
+        let startX;
+        let scrollLeft;
+        // updating the custom scrollbar
+        const updateScrollbar = () => {
+          const scrollWidth =
+            (scrollContainer.clientWidth / scrollContainer.scrollWidth) * 100;
+          const scrollLeft =
+            (scrollContainer.scrollLeft / scrollContainer.scrollWidth) *
+            container.clientWidth;
+          container.style.setProperty("--scroll-width", "${scrollWidth}%");
+          container.style.setProperty("--scroll-left", `${scrollLeft}px`);
+        };
+
+        // mouse wheel scrolling
+        scrollContainer.addEventListener("wheel", (e) => {
+          e.preventDefault();
+          scrollContainer.scrollLeft += e.deltaY;
+          updateScrollbar();
+        });
+
+        // mouse drag scrolling
+        scrollContainer.addEventListener("mousedown", (e) => {
+          isMouseDown = true;
+          startX = e.pageX - scrollContainer.offsetLeft;
+          scrollLeft = scrollContainer.scrollLeft;
+        });
+        scrollContainer.addEventListener("mouseleave", () => {
+          isMouseDown = false;
+        });
+        scrollContainer.addEventListener("mouseup", () => {
+          isMouseDown = false;
+        });
+        scrollContainer.addEventListener("mousemove", (e) => {
+          if (!isMouseDown) return;
+          e.preventDefault();
+          const x = e.pageX - scrollContainer.offsetLeft;
+          const walk = (x - startX) * 2;
+          scrollContainer.scrollLeft = scrollLeft - walk;
+          updateScrollbar();
+        });
+        scrollContainer.addEventListener("scroll", () => {
+          updateScrollbar();
+        });
+        updateScrollbar();
+      });
+
+      // comment section
+      document.addEventListener("DOMContentLoaded", () => {
+        const commentBtns = document.querySelectorAll(".comments");
+        const commentSections = document.querySelectorAll(".comment-section");
+        const commentForms = document.querySelectorAll(".comment-form");
+
+        // Toggle comment section
+        commentBtns.forEach((btn, index) => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const section = commentSections[index];
+            const isActive = section.classList.contains("active");
+
+            // Close all other comment sections
+            commentSections.forEach((s) => {
+              if (s !== section) s.classList.remove("active");
+            });
+
+            // Toggle current comment section
+            section.classList.toggle("active");
+
+            // Focus textarea if opening
+            if (!isActive) {
+              const textarea = section.querySelector(".comment-input");
+              setTimeout(() => textarea.focus(), 300);
+            }
+          });
+        });
+
+        // Handle comment submission
+        commentForms.forEach((form) => {
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const textarea = form.querySelector(".comment-input");
+            const commentsContainer = form.parentElement.querySelector(
+              ".comments-container"
+            );
+
+            if (textarea.value.trim()) {
+              // Create new comment
+              const comment = document.createElement("div");
+              comment.className = "comment";
+              comment.textContent = textarea.value;
+
+              // Adding comment to container
+              commentsContainer.insertBefore(
+                comment,
+                commentsContainer.firstChild
+              );
+
+              // Clear textarea
+              textarea.value = "";
+
+              // Updating comment count
+              const commentBtn =
+                form.parentElement.parentElement.querySelector(".comments");
+              const countSpan = commentBtn.textContent.trim().match(/\d+/)[0];
+              let newCount = parseInt(countSpan) + 1;
+              commentBtn.innerHTML = `<span class="icon">💬</span>${newCount}`;
+            }
+          });
+        });
+
+        // Close comment section when clicking outside
+        document.addEventListener("click", (e) => {
+          if (
+            !e.target.closest(".comment-section") &&
+            !e.target.closest(".comments")
+          ) {
+            commentSections.forEach((section) => {
+              section.classList.remove("active");
+            });
+          }
+        });
+
+        // Auto-resize textarea
+        const textareas = document.querySelectorAll(".comment-input");
+        textareas.forEach((textarea) => {
+          textarea.addEventListener("input", function () {
+            this.style.height = "auto";
+            this.style.height = this.scrollHeight + "px";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

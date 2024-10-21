@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SereneSpot</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <!-- logo-section -->
+      <div class="logo-section">
+        <img src="/Images/logo.png" width="70" height="70" />
+        <h1 class="webiste-name">SereneSpot</h1>
+      </div>
+      <!-- search section -->
+      <div class="search">
+        <form action="#">
+          <input type="text" placeholder="Search Forums" name="seacrh" />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <br />
+
+    <!-- bottoma area -->
+    <div class="bottom-area">
+      <div class="nav-container">
+        <nav>
+          <ul class="functions">
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="active"
+                onclick="location.reload();"
+              >
+                <span><img src="/Images/home.png" /></span>Home</a
+              >
+            </li>
+            <li>
+              <a href="/popularity/poopularity.html">
+                <span><img src="/Images/popularity.png" /></span> Popularity</a
+              >
+            </li>
+            <li>
+              <a href="#notification">
+                <span><img src="/Images/notification.png" /></span>
+                Notification</a
+              >
+            </li>
+
+            <div class="divider"></div>
+
+            <li class="section-title">Resources</li>
+            <li class="sub-menu">
+              <a href="/latestResources/latestResearches.html"
+                ><span><img src="/Images/latestResources.png" /></span>Latest
+                Resources</a
+              >
+            </li>
+            <li class="sub-menu">
+              <a href="#copingStrategies"
+                ><span><img src="/Images/copingStrategies.png" alt="" /></span
+                >Coping Strategies</a
+              >
+            </li>
+            <li class="sub-menu">
+              <a href="#positivePsychology"
+                ><span><img src="/Images/positivePsychology.png" /></span
+                >Positive Psychology</a
+              >
+            </li>
+
+            <div class="divider"></div>
+
+            <li>
+              <a href="#privacyPolicy"
+                ><span><img src="/Images/privacyPolicy.png" /></span>Privacy
+                Policy</a
+              >
+            </li>
+            <li>
+              <a href="#termsAndConditions"
+                ><span><img src="/Images/termsAndConditions.png" /></span>Terms
+                and Conditions</a
+              >
+            </li>
+            <li>
+              <a href="#aboutUs"
+                ><span><img src="/Images/AboutUs.png" /></span>About Us</a
+              >
+            </li>
+
+            <div class="divider"></div>
+
+            <li>
+              <a href="#logIn"
+                ><span><img src="/Images/logIn.png" /></span>Log In</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- main content -->
+      <div class="overlay" id="overlay"></div>
+
+      <div class="main-content">
+        <div class="create-post" id="createPost">
+          <textarea
+            class="post-input"
+            id="postInput"
+            placeholder="Share your thoughts! 😊"
+          ></textarea>
+          <div class="post-actions" id="postActions">
+            <div class="post-attachments">
+              <button class="post-button">
+                <i class="fas fa-image"></i>Add Image
+              </button>
+            </div>
+            <button class="post-button" onclick="createPost()">Post</button>
+          </div>
+        </div>
+        <div class="posts-container" id="postsContainer"></div>
+        <!-- User Posts -->
+        <div class="card">
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/control/564x/12/b2/4c/12b24c56ccf5cccf67d98ef74f0dbe0e.jpg"
+              alt="unohana"
+              class="avatar"
+            />
+            <div class="user-handle">@girlBoss</div>
+          </div>
+          <h2 class="title">
+            What does mental health wellness mean to you guys?
+          </h2>
+          <p class="description">
+            Mental wellness, for me, is about feeling emotionally balanced and
+            having a sense of control over my thoughts and reactions. I know I'm
+            in a good place mentally when I can handle stress without feeling
+            overwhelmed and I find joy in everyday activities. I used to think
+            mental health was just about not feeling anxious or sad, but now I
+            realise it's also about growth, learning to cope with emotions and
+            being kind.
+          </p>
+          <div class="action-bar">
+            <button class="likes"><span class="icon">❤️</span>2.3K</button>
+            <button class="comments" id="commentBtn">
+              <span class="icon">💬</span>345
+            </button>
+          </div>
+          <!-- comment section -->
+          <div class="comment-section">
+            <h3>Leave a comment</h3>
+            <div class="comments-container"></div>
+            <form class="comment-form">
+              <textarea
+                name="comment"
+                class="comment-input"
+                rows="4"
+                placeholder="Post your comment here..."
+              ></textarea>
+              <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+        <br />
+        <!-- User Posts -->
+        <div class="card">
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/736x/6f/a7/75/6fa775ce9b3d303499e51ac7926d6433.jpg"
+              alt="arlecchino"
+              class="avatar"
+            />
+            <div class="user-handle">@father</div>
+          </div>
+          <h2 class="title">You can take it slowly !</h2>
+          <p class="description">
+            In a world that rushes by, Let’s savor every moment, you and I. With
+            each step, we’ll find our flow, Embrace the journey, take it slow.
+          </p>
+          <img
+            src="https://i.pinimg.com/736x/67/2f/75/672f753d3c81d02c8e0132f39a9047ad.jpg"
+            alt="nature"
+            class="arle-img"
+          />
+          <div class="action-bar">
+            <button class="likes"><span class="icon">❤️</span>5K</button>
+            <button class="comments" id="commentBtn">
+              <span class="icon">💬</span>2.6K
+            </button>
+          </div>
+          <!-- comment section -->
+          <div class="comment-section">
+            <h3>Leave a comment</h3>
+            <div class="comments-container"></div>
+            <form class="comment-form">
+              <textarea
+                name="comment"
+                class="comment-input"
+                rows="4"
+                placeholder="Post your comment here..."
+              ></textarea>
+              <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+        <br />
+        <!-- User Posts -->
+        <div class="card">
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/control/564x/02/12/13/02121382423a0294345fc73b5fc02cf1.jpg"
+              alt="spikyhead"
+              class="avatar"
+            />
+            <div class="user-handle">@spikyhead</div>
+          </div>
+          <h2 class="title">How Do You Cope with Stress and Anxiety?</h2>
+          <p class="description">
+            When I’m feeling really anxious, deep breathing exercises have been
+            a lifesaver. There’s a technique I use called 4-7-8 breathing:
+            inhale for 4 seconds, hold for 7, and exhale for 8. It slows down my
+            heart rate and makes me feel more in control. I’ve also started
+            practicing yoga a few times a week, which has helped with stress.
+            What do you all do when anxiety starts creeping in? I’m always open
+            to learning new techniques!
+          </p>
+          <div class="action-bar">
+            <button class="likes"><span class="icon">❤️</span>5K</button>
+            <button class="comments" id="commentBtn">
+              <span class="icon">💬</span>2.6K
+            </button>
+          </div>
+          <!-- comment section -->
+          <div class="comment-section">
+            <h3>Leave a comment</h3>
+            <div class="comments-container"></div>
+            <form class="comment-form">
+              <textarea
+                name="comment"
+                class="comment-input"
+                rows="4"
+                placeholder="Post your comment here..."
+              ></textarea>
+              <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+        <br />
+        <!-- User Posts -->
+        <div class="card">
+          <div class="user-info">
+            <img
+              src="https://i.pinimg.com/736x/16/ab/6e/16ab6e2822cc56d12cef3dde641bf697.jpg"
+              alt="spikyhead"
+              class="avatar"
+            />
+            <div class="user-handle">@arleGirl</div>
+          </div>
+          <h2 class="title">It’s Okay to Not Be Okay</h2>
+          <p class="description">
+            Your mental health is just as important as your physical health.
+            It’s okay to feel overwhelmed, stressed, or down sometimes. What
+            matters most is taking the time to check in with yourself, rest when
+            needed, and seek support if things get tough. Remember, self-care
+            isn’t selfish—it’s necessary. Take a deep breath, you’re doing your
+            best.💙
+          </p>
+          <div class="action-bar">
+            <button class="likes"><span class="icon">❤️</span>5K</button>
+            <button class="comments" id="commentBtn">
+              <span class="icon">💬</span>2.6K
+            </button>
+          </div>
+          <!-- comment section -->
+          <div class="comment-section">
+            <h3>Leave a comment</h3>
+            <div class="comments-container"></div>
+            <form class="comment-form">
+              <textarea
+                name="comment"
+                class="comment-input"
+                rows="4"
+                placeholder="Post your comment here..."
+              ></textarea>
+              <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Store posts in localStorage for presistence
+      let posts = JSON.parse(localStorage.getItem("posts")) || [];
+
+      // Get DOM elements
+      const postInput = document.getElementById("postInput");
+      const postActions = document.getElementById("postActions");
+      const createPostDiv = document.getElementById("createPost");
+      const overlay = document.getElementById("overlay");
+
+      //Add click event to textarea
+      postInput.addEventListener("click", function (e) {
+        e.stopPropagation();
+        expandPostInput();
+      });
+
+      // Add click event to overlay for closing
+      overlay.addEventListener("click", collapsePostInput);
+
+      //Add click event to document for closing
+      document.addEventListener("click", function (e) {
+        if (!createPostDiv.contains(e.target)) {
+          collapsePostInput();
+        }
+      });
+
+      function expandPostInput() {
+        postInput.classList.add("expanded");
+        postActions.classList.add("visible");
+        createPostDiv.classList.add("expanded");
+        overlay.classList.add("visible");
+      }
+
+      function collapsePostInput() {
+        if (postInput.value.trim() == "") {
+          postInput.classList.remove("expanded");
+          postActions.classList.remove("visible");
+          createPostDiv.classList.remove("expanded");
+          overlay.classList.remove("visible");
+        }
+      }
+
+      function createPost() {
+        const content = postInput.value.trim();
+        //in case of empty content
+        if (!content) {
+          alert("Post cannot be empty!");
+          return;
+        }
+        const confirmPost = window.confirm(
+          "Are you sure you want to post this?"
+        );
+
+        //handling the yes button
+        if (confirmPost) {
+          // Show success message after confirmation
+          alert("Your post has been successfully created!");
+        } else {
+          // If user clicks 'No', show cancellation message
+          alert("Post creation was canceled.");
+        }
+        postInput.value = "";
+        collapsePostInput();
+      }
+
+      // comment section
+      document.addEventListener("DOMContentLoaded", () => {
+        const commentBtns = document.querySelectorAll(".comments");
+        const commentSections = document.querySelectorAll(".comment-section");
+        const commentForms = document.querySelectorAll(".comment-form");
+
+        // Toggle comment section
+        commentBtns.forEach((btn, index) => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const section = commentSections[index];
+            const isActive = section.classList.contains("active");
+
+            // Close all other comment sections
+            commentSections.forEach((s) => {
+              if (s !== section) s.classList.remove("active");
+            });
+
+            // Toggle current comment section
+            section.classList.toggle("active");
+
+            // Focus textarea if opening
+            if (!isActive) {
+              const textarea = section.querySelector(".comment-input");
+              setTimeout(() => textarea.focus(), 300);
+            }
+          });
+        });
+
+        // Handle comment submission
+        commentForms.forEach((form) => {
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const textarea = form.querySelector(".comment-input");
+            const commentsContainer = form.parentElement.querySelector(
+              ".comments-container"
+            );
+
+            if (textarea.value.trim()) {
+              // Create new comment
+              const comment = document.createElement("div");
+              comment.className = "comment";
+              comment.textContent = textarea.value;
+
+              // Adding comment to container
+              commentsContainer.insertBefore(
+                comment,
+                commentsContainer.firstChild
+              );
+
+              // Clear textarea
+              textarea.value = "";
+
+              // Updating comment count
+              const commentBtn =
+                form.parentElement.parentElement.querySelector(".comments");
+              const countSpan = commentBtn.textContent.trim().match(/\d+/)[0];
+              let newCount = parseInt(countSpan) + 1;
+              commentBtn.innerHTML = `<span class="icon">💬</span>${newCount}`;
+            }
+          });
+        });
+
+        // Close comment section when clicking outside
+        document.addEventListener("click", (e) => {
+          if (
+            !e.target.closest(".comment-section") &&
+            !e.target.closest(".comments")
+          ) {
+            commentSections.forEach((section) => {
+              section.classList.remove("active");
+            });
+          }
+        });
+
+        // Auto-resize textarea
+        const textareas = document.querySelectorAll(".comment-input");
+        textareas.forEach((textarea) => {
+          textarea.addEventListener("input", function () {
+            this.style.height = "auto";
+            this.style.height = this.scrollHeight + "px";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
