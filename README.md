@@ -4,6 +4,7 @@ Welcome to Serene Spot, a web platform focused on promoting mental wellness and 
 
 
 **Features**
+
 Home Page: Browse recent discussions and share your thoughts.
 
 Resources: Access the latest research articles and mental health tips.
@@ -13,8 +14,7 @@ Discussion Forums: Engage with a supportive community.
 Filtering: Easily find content based on your needs.
 
 
-**Technologies Used
-**
+**Technologies Used**
 
 HTML, CSS, JavaScript
 
